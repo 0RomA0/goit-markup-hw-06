@@ -295,14 +295,14 @@ display: none;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url("../images/hero/people-office_tab@1x.jpg");
     }
-}
-
-@media screen and (min-width: 768px) and (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .business {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url("../images/hero/people-office_tab@2x.jpg");
+    @media screen and (min-width: 768px) and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .business {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url("../images/hero/people-office_tab@2x.jpg");
+        }
     }
 }
+
 
 @media screen and (min-width: 1158px) {
     .business {
@@ -311,12 +311,11 @@ display: none;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url("../images/hero/people-office_desc@1x.jpg");
     }
-}
-
-@media screen and (min-width: 1158px) and (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .business {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url("../images/hero/people-office_desc@2x.jpg");
+    @media screen and (min-width: 1158px) and (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .business {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url("../images/hero/people-office_desc@2x.jpg");
+        }
     }
 }
 
