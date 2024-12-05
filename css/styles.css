@@ -423,10 +423,7 @@ display: none;
 }
 
 .benefits-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+   
 }
 
 .visually-hidden {
@@ -893,7 +890,6 @@ display: none;
 }
 
 .article-icon-footer {
-margin-bottom: 16px;
 display: flex;
 font-family: "Roboto", sans-serif;
 font-weight: 500;
@@ -1015,7 +1011,7 @@ gap: 24px;
     line-height: 2; 
     letter-spacing: 0.04em;
     color: #fff;
-
+    outline: transparent;
 }
 
 @media screen and (min-width: 768px) {
@@ -1027,6 +1023,10 @@ gap: 24px;
 
 .input-footer:placeholder {
     color: #ffffff;
+}
+
+.input-footer:focus {
+    border: 1px solid #31d0aa;
 }
 
 .button-form-footer {
@@ -1049,6 +1049,18 @@ gap: 24px;
     color: #fff;
     cursor: pointer;
     border: none;
+}
+
+.button-form-footer:active {
+    background-color: #31d0aa;
+}
+
+@media screen and (min-width: 1158px) {
+    .button-form-footer:hover,
+    .button-form-footer:focus {
+        background-color: #31d0aa;
+    
+}
 }
 
 .icon-form-footer {
@@ -1337,10 +1349,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 .mobile-menu {
+    position: fixed;
     display: flex;
     flex-direction: column;
     position: fixed;
-    padding: 72px 16px 40px 16px;
+    padding: 72px 16px 40px;
     top: 0;
     left: 0;
     width: 100%;
@@ -1356,7 +1369,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
  .mobile-menu-button {
-    margin-left: auto;
+    position: absolute;
+    top: 24px;
+    right: 24px;
     padding: 0;
     width: 24px;
     height: 24px;
@@ -1384,7 +1399,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-top: 24px;
     margin-bottom: auto;
 }
     
@@ -1394,7 +1408,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         position: relative;
         display: block;
         align-items: center;
-        padding: 24px 0;
         font-weight: 700;
         font-size: 36px;
         line-height: 111%;
@@ -1425,7 +1438,6 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     display: flex;
     align-items: center;
-    padding: 24px 0;
     font-weight: 500;
     font-size: 20px; 
     line-height: 120%;
